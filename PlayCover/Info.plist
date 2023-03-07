@@ -63,23 +63,50 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>io.playcover.PlayCover</string>
+			<string>com.apple.Magnifier</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>playcover</string>
+				<string>apple-magnifier</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.utilities</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © PlayCover Community Edition</string>
 	<key>NSSystemAdministrationUsageDescription</key>
 	<string>PlayCover needs to read files to save apps</string>
-	<key>LSApplicationCategoryType</key>
-	<string>public.app-category.utilities</string>
+	<key>SUFeedURL</key>
+	<string>https://raw.githubusercontent.com/PlayCover/PlayCover/update/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>YzgQIwegeMGJxhosWRn/1IyEeEe385xcKE3cXeewlK0=</string>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.apple.property-list</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Keyboard mappings</string>
+			<key>UTTypeIcons</key>
+			<dict/>
+			<key>UTTypeIdentifier</key>
+			<string>io.playcover.PlayCover-playmap</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>playmap</string>
+				</array>
+			</dict>
+		</dict>
+		<dict/>
+	</array>
 	<key>UTImportedTypeDeclarations</key>
 	<array>
 		<dict>

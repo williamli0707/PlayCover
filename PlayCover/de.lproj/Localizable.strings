@@ -1,41 +1,387 @@
-"Add app" = "App hinzufügen";
-"My Apps" = "Meine Apps";
-"Downloads" = "Downloads";
-"Settings" = "Einstellungen";
-"About" = "Über uns";
-"Show in Finder" = "Im Finder anzeigen";
-"Update PlayTools" = "PlayTools aktualisieren";
-"Reset PlayTools settings" = "PlayTools-Einstellungen zurücksetzen";
-"Clear app cache" = "App-Cache leeren";
-"Delete app" = "App löschen";
-"Wrong file type" = "Falscher Dateityp";
-"You should use .ipa file" = "Du musst eine .ipa-Datei verwenden";
-"OK" = "OK";
-"Please, input your admin password" = "Bitte gib Dein Admin-Passwort ein";
-"App needs it for xattr command" = "App benötigt es für xattr-Befehl";
-"Advanced settings" = "Erweiterte Einstellungen";
-"Cancel" = "Abbrechen";
-"Install app" = "App installieren";
-"Installing..." = "Installieren...";
-"Error!" = "Fehler!";
-"Install PlayTools" = "PlayTools installieren";
-"Fix login in games" = "Anmeldung in Spielen behoben";
-"Alternative convert method" = "Alternative Konvertierungsmethode";
-"Alternative decrypt method" = "Alternative Entschlüsselungsmethode";
-"Export for iOS, Mac (Sideloadly, AltStore)" = "Export für iOS, Mac (Sideloadly, AltStore)";
-"Install instruction" = "Installationsanleitung";
-"(for Genshin login fix e.g.)" = "(für Genshin-Login-Fix z.B.)";
-"You have enabled SIP. You must disable it to run the game." = "Du hast SIP aktiviert. Du musst es deaktivieren, um das Spiel auszuführen.";
-"To do this you need to reboot, enter into Recovery mode, open Terminal and type" = "Um dies zu tun, musst Du deinen Mac neu starten, in den Wiederherstellungsmodus wechseln";
-"Your nvram params are not valid. Execute following command in Terminal and restart Mac" = "Deine; nvram-Parameter sind ungültig. Führe den folgenden Befehl im Terminal aus und starte den Mac neu";
-"Your system is not ready to run games! Watch video for easy setup." = "Dein System ist nicht bereit, Spiele auszuführen! Sieh Dir das Video zur einfachen Einrichtung an.";
-"Your system setup is correct." = "Deine Systemkonfiguration ist korrekt.";
-"About app" = "Über die App";
-"This .IPA can't be decrypted on this Mac. Download .ipa from AppDb.to or our Discord. You can also try to use 'Alterntaive decrypt' checkbox" = "Diese .IPA kann auf diesem Mac nicht entschlüsselt werden. Lade Dir eine .ipa von AppDb.to oder unserem Discord herunter. Du kannst auch versuchen, 'Alterntaive Entschlüsselung' zu verwenden' Kontrollkästchen";
-"This .IPA is corrupted. It doesn't contain Info.plist." = "Diese .IPA ist beschädigt. Sie enthält keine Info.plist.";
-"It is impossible to decrypt .IPA with SIP disabled. Please, enable it." = "Es ist unmöglich, .IPA mit deaktiviertem SIP zu entschlüsseln. Bitte aktiviere es.";
-"Please reinstall PlayCoverApp" = "Bitte installiere die PlayCoverApp neu";
-"Make sure you don't disallowed PlayCover to access files in Settings - Secuirity & Privacy" = "Stelle sicher, dass Du PlayCover den Zugriff auf Dateien in den Einstellungen – Sicherheit und Datenschutz nicht untersagt hast";
-"This .IPA is courrupted.Try to use another .ipa" = "Diese .IPA ist beschädigt.Versuch, eine andere .ipa . zu verwenden";
-"You have not performed all instructions! Please, perform all instructions in 'Settings' or watch video in pinned messages." = "Du hast nicht alle Anweisungen ausgeführt! Bitte führe alle Anweisungen unter 'Einstellungen' aus oder schau Dir das Video in den angepinnten Nachrichten an..";
-"Get" = "Herunterladen";
+/* (No Comment) */
+"alert.app.delete" = "Alle App daten werden gelöscht. Du musst die App Dateien vielleicht wieder Installieren. Willst du fortfahren?";
+
+/* (No Comment) */
+"alert.app.preferences" = "Alle in-app Einstellungen werden gelöscht. Willst du fortfahren?";
+
+/* (No Comment) */
+"alert.appCacheCleared" = "App daten wurden gelöscht!";
+
+/* (No Comment) */
+"alert.error" = "Ein Fehler ist aufgetreten!";
+
+/* (No Comment) */
+"alert.errorImportKm" = "Fehler beim importieren aufgetreten!";
+
+/* (No Comment) */
+"alert.kmImported" = "Keymapping importiert!";
+
+/* (No Comment) */
+"alert.moveAppToApplications.move" = "In Applikations mappe verschieben";
+
+/* (No Comment) */
+"alert.restart" = "Bitte PlayCover Neustarten.";
+
+/* (No Comment) */
+"alert.storeAccount.regionIsNotValid" = "Der aktuelle Account ist auf eine andere Region eingestellt. Starten Sie das Spiel, ändern Sie die Region und passieren Sie die Tore, um zu speichern. Dann versuchen Sie es erneut";
+
+/* (No Comment) */
+"alert.success" = "Erfolgreich";
+
+/* (No Comment) */
+"button.Cancel" = "Abbrechen";
+
+/* (No Comment) */
+"button.Close" = "Schließen";
+
+/* (No Comment) */
+"button.Install" = "Installieren";
+
+/* (No Comment) */
+"button.OK" = "OK";
+
+/* (No Comment) */
+"button.Proceed" = "Fortfahren";
+
+/* (No Comment) */
+"error.corruptedIPA" = "Diese .ipa datei ist beschädigt. Es hat keine \"Info.plist\" datei.";
+
+/* (No Comment) */
+"error.waitInstallation" = "Bitte warte bis die aktuelle Installation fertig ist!";
+
+/* (No Comment) */
+"menubar.checkForUpdates" = "Updates werden gesucht...";
+
+/* (No Comment) */
+"menubar.discord" = "Discord";
+
+/* (No Comment) */
+"menubar.documentation" = "Dokumentation";
+
+/* (No Comment) */
+"menubar.exportToSideloady" = "Exportiere zu Sideloadly";
+
+/* (No Comment) */
+"menubar.github" = "GitHub";
+
+/* (No Comment) */
+"menubar.log.copy" = "Protokolle kopieren";
+
+/* (No Comment) */
+"menubar.website" = "Webseite";
+
+/* (No Comment) */
+"notification.appInstalled" = "App installiert!";
+
+/* (No Comment) */
+"notification.appInstalled.message" = "In PlayCover ansehen!";
+
+/* (No Comment) */
+"playapp.activateAccount" = "Account wechseln";
+
+/* (No Comment) */
+"playapp.clearCache" = "App Daten löschen";
+
+/* (No Comment) */
+"playapp.clearPreferences" = "App Einstellungen löschen";
+
+/* (No Comment) */
+"playapp.delete" = "App deinstallieren";
+
+/* (No Comment) */
+"playapp.deleteAccount" = "Account löschen";
+
+/* (No Comment) */
+"playapp.exportKm" = "Keymapping exportieren";
+
+/* (No Comment) */
+"playapp.importKm" = "Keymapping importieren";
+
+/* (No Comment) */
+"playapp.install.addToLib" = "App wird zur Bibliothek hinzugefügt...";
+
+/* (No Comment) */
+"playapp.install.copy" = "App wird kopiert...";
+
+/* (No Comment) */
+"playapp.install.createWrapper" = "App Umschlag erstellen...";
+
+/* (No Comment) */
+"playapp.progress.finished" = "Fertig";
+
+/* (No Comment) */
+"playapp.install.installPlayTools" = "PlayTools werden Installiert...";
+
+/* (No Comment) */
+"playapp.install.signing" = "Unterzeichne App...";
+
+/* (No Comment) */
+"playapp.install.unzip" = "App von .ipa datei extrahieren...";
+
+/* (No Comment) */
+"playapp.openCache" = "App Daten öffnen";
+
+/* (No Comment) */
+"playapp.settings" = "Einstellungen";
+
+/* (No Comment) */
+"playapp.showInFinder" = "Im Finder anzeigen";
+
+/* (No Comment) */
+"playapp.storeCurrentAccount" = "Account speichern";
+
+/* (No Comment) */
+"preferences.button.checkForUpdates" = "Suche nach Updates";
+
+/* (No Comment) */
+"preferences.tab.updates" = "Aktualisierungen";
+
+/* (No Comment) */
+"preferences.toggle.automaticUpdates" = "Automatisch nach Updates suchen";
+
+/* (No Comment) */
+"settings.button.discord" = "Benutzerdefinierte Discord Aktivität";
+
+/* (No Comment) */
+"settings.button.clearActivity" = "Benutzerdefinierte Aktivität löschen";
+
+/* (No Comment) */
+"settings.picker.iosDevice" = "iOS gerät:";
+
+/* %.f */
+"settings.slider.mouseSensitivity" = "Mausempfindlichkeit: %.f";
+
+/* (No Comment) */
+"settings.text.applicationID" = "Anwendungs ID";
+
+/* (No Comment) */
+"settings.text.customHeight" = "Höhe";
+
+/* (No Comment) */
+"settings.text.customWidth" = "Breite";
+
+/* (No Comment) */
+"settings.text.details" = "Details";
+
+/* (No Comment) */
+"settings.text.details.help" = "Erste Zeile unter dem Titel";
+
+/* (No Comment) */
+"settings.text.image" = "Bild";
+
+/* (No Comment) */
+"settings.text.image.help" = "Link zum Bild oder Dev Portal Asset Namen";
+
+/* (No Comment) */
+"settings.text.state" = "Zustand";
+
+/* (No Comment) */
+"settings.text.state.help" = "Zweite Reihe unter dem Titel";
+
+/* (No Comment) */
+"settings.toggle.disableDisplaySleep" = "Deaktiviere Display Ruhezustand";
+
+/* (No Comment) */
+"settings.toggle.discord" = "Discord Aktivität aktivieren";
+
+/* (No Comment) */
+"settings.toggle.jbBypass" = "Jailbreak Umgehung aktivieren (Experimental)";
+
+/* (No Comment) */
+"settings.toggle.km" = "Tastaturbelegung";
+
+/* (No Comment) */
+"soundAlert.failureText" = "Abtastrate des aktuellen Ausgabegeräts konnte nicht auf 48 kHz eingestellt werden. Sie können die Abtastrate in der Audio MIDI Setup App manuell einstellen";
+
+/* (No Comment) */
+"soundAlert.informativeText" = "Ihr aktuelles Ausgabegerät hat keine Abtastrate von 48 oder 44,1 kHz! Es kann zu Abstürzen kommen. Möchten Sie die Abtastrate Ihres aktuellen Ausgabegeräts auf 48 kHz ändern?";
+
+/* (No Comment) */
+"soundAlert.messageText" = "Falsche Audioeinstellungen erkannt!";
+
+/* (No Comment) */
+"soundAlert.successText" = "Aktuelle Abtastrate des Ausgabegeräts auf 48 kHz eingestellt";
+
+/* (No Comment) */
+"storeAccount.deleteAcc" = "Account löschen";
+
+/* (No Comment) */
+"storeAccount.nameOfAcc" = "Name deines Accounts";
+
+/* (No Comment) */
+"storeAccount.nameOfAcc.textfieldPlaceholder" = "Name deines Accounts...";
+
+/* (No Comment) */
+"storeAccount.selectAcc" = "Account auswählen";
+
+/* (No Comment) */
+"storeAccount.selectAccRegion" = "Account Region auswählen";
+
+/* (No Comment) */
+"storeAccount.selectAccRegion.asia" = "Asien";
+
+/* (No Comment) */
+"storeAccount.selectAccRegion.cht" = "TW, HK, MO";
+
+/* (No Comment) */
+"storeAccount.selectAccRegion.euro" = "Europa";
+
+/* (No Comment) */
+"storeAccount.selectAccRegion.usa" = "Amerika";
+
+/* (No Comment) */
+"storeAccount.store" = "Account speichern";
+
+/* (No Comment) */
+"storeAccount.storeAcc" = "Account speichern";
+"sidebar.ipaLibrary" = "IPA Bibliothek";
+"button.Quit" = "Verlassen";
+"settings.info.minimumOSVersion" = "Minimum OS version:";
+"settings.info.url" = "URL:";
+"settings.toggle.hud" = "Metall HUD";
+"playapp.exportKmPanel.fieldLabel" = "PlayMap Name:";
+"sidebar.appLibrary" = "App Bibliothek";
+"storeAccount.alert.restoreAccount" = "Account wirklich wiederherstellen?";
+"storeAccount.alert.restoreAccount.button" = "Account wiederherstellen";
+"storeAccount.alert.restoreAccount.msg" = "Dies wird deinen gerade eingeloggten Account überschreiben.";
+"storeAccount.alert.deleteAccount" = "Account wirklich löschen?";
+"storeAccount.alert.deleteAccount.button" = "Account löschen";
+"alert.moveAppToApplications.title" = "Zur Applikations mappe verschieben?";
+"alert.moveAppToApplications.subtitle" = "PlayCover muss in der Applikations mappe sein um zu funktionieren. Drücke den unteren button um PlayCover automatisch zu verschieben.";
+"error.appEncrypted" = "Diese App ist verschlüsselt! Bitte verwenden Sie eine entschlüsselte IPA. iMazing IPAs werden nicht unterstützt!";
+"error.appCorrupted" = "Bei dieser IPA ist etwas schief gelaufen. Bitte versuchen Sie, eine andere IPA Datei zu verwenden.";
+"error.appProhibited" = "Die Verwendung dieser App über PlayCover wird wahrscheinlich zu einem Ban führen!";
+"error.noGenshinAccount" = "Wir konnten kein Genshin Account finden! Sind Sie in einem Account in der App angemeldet?";
+"settings.title" = "%@ Einstellungen";
+"settings.tab.info" = "Informationen";
+"settings.tab.km" = "Tastaturbelegung";
+"settings.toggle.km.help" = "Tastaturunterstützung für Touch-Only-Spiele hinzufügen. Verwenden Sie Befehlstaste + K, um das Editor-Menü zu öffnen.";
+"settings.toggle.mm" = "Maus belegung";
+"settings.picker.adaptiveRes.1" = "Automatisch (basierend auf der Anzeige)";
+"settings.picker.adaptiveRes.5" = "Definiert";
+"settings.picker.aspectRatio" = "Seitenverhältnis:";
+"settings.toggle.mm.help" = "Fügen Sie Maussteuerungen hinzu, die Berührungsbewegungen emulieren. Verwenden Sie Befehlstaste + K, um das Editor-Menü zu öffnen.";
+"settings.tab.graphics" = "Grafik";
+"settings.picker.adaptiveRes" = "Auflösung:";
+"settings.picker.adaptiveRes.help" = "Ändert die Fensterauflösung der App";
+"settings.picker.adaptiveRes.0" = "App Standard";
+"settings.toggle.disableDisplaySleep.help" = "Verhindere das ausschalten vom Display während diese App läuft";
+"settings.toggle.jbBypass.help" = "Versuche die Jailbreak Erkennung in einigen Spielen zu umgehen (funktioniert nicht garantiert immer)";
+"settings.info.displayName" = "Anzeigename:";
+"settings.info.bundleName" = "Bündel name:";
+"settings.info.bundleIdentifier" = "Bündel identifizierer:";
+"settings.info.executableName" = "Name der ausführbaren Datei:";
+"settings.resetSettings" = "Einstellungen zurücksetzen";
+"settings.resetKm" = "Tastenbelegung zurücksetzen";
+"settings.resetSettingsCompleted" = "Die Einstellungen wurden auf die Standardeinstellungen zurückgesetzt!";
+"settings.resetKmCompleted" = "Tastenbelegung wurde zurückgesetzt!";
+"settings.tab.misc" = "Sonstiges";
+"settings.info.bundleVersion" = "Bündel version:";
+"button.Convert" = "Konvertieren";
+"playapp.deleteConfirm" = "Deinstallieren";
+"playapp.deleteMessage" = "Bist du dir sicher dass du %@ deinstallieren willst?";
+"alert.legacyImport.title" = "Veraltete App Einstellungen erkannt!";
+"alert.legacyImport.subtitle" = "Veraltete Einstellungen und Keymapping Dateien wurden erkannt. Möchten Sie diese Dateien in das neue Format konvertieren?";
+"settings.text.detectedResolution" = "Erkannte Auflösung:";
+"playapp.add" = "App hinzufügen";
+"alert.wrongFileType.title" = "Falscher Datei typ!";
+"alert.wrongFileType.subtitle" = "PlayCover kann nur gültige .ipa Dateien installieren.";
+"error.waitDownload" = "Bitte warte bis der aktuelle Download fertig ist!";
+"playapp.addSource" = "Quelle hinzufügen";
+"ipaLibrary.noSources.title" = "Keine IPA Quellen hinzugefügt";
+"ipaLibrary.noSources.subtitle" = "Du hast gerade keine IPA Quellen hinzugefügt. Drücke den unteren button um eine hinzuzufügen.";
+"ipaLibrary.noSources.button" = "Quelle hinzufügen";
+"ipaLibrary.noNetworkConnection.toast" = "Keine Internetverbindung!";
+"preferences.tab.ipasource" = "IPA Quellen";
+"preferences.button.addSource" = "Quelle hinzufügen";
+"preferences.button.deleteSource" = "Quelle löschen";
+"preferences.button.moveSourceUp" = "Quelle nach oben verschieben";
+"preferences.button.moveSourceDown" = "Quelle nach unten verschieben";
+"preferences.popover.valid" = "Link gültig";
+"preferences.popover.badurl" = "URL Ungültig!";
+"preferences.popover.badjson" = "JSON Ungültig oder nicht gefunden worden!";
+"preferences.textfield.url" = "URL Quelle...";
+"playapp.download.downloading" = "Wird heruntergeladen";
+"preferences.toggle.clearAppData" = "Daten löschen";
+"alert.supression" = "Du kannst dies in den PlayCover Einstellungen ändern";
+"menubar.clearCache" = "Cache löschen";
+"preferences.tab.uninstall" = "Deinstallieren";
+"preferences.whenUninstalling" = "Beim deinstallieren:";
+"preferences.toggle.showUninstall" = "Warnungs popup zeigen";
+"preferences.toggle.removeKeymap" = "Keymap löschen";
+"preferences.toggle.removeSetting" = "Einstellungen löschen";
+"preferences.toggle.removeEntitlements" = "Berechtigungen löschen";
+"preferences.button.pruneFiles" = "Dateien kürzen";
+"preferences.prune.alert" = "Bist du dir sicher dass du alle Dateien kürzen willst?";
+"preferences.prune.message" = "Dies wird alle ungenutzte Dateien sowie Einstellungen, Keymappings, Berechtigungen und App Daten löschen";
+"playapp.progress.failed" = "Fehlgeschlagen";
+"preferences.tab.install" = "Installieren";
+"preferences.toggle.showInstallPopup" = "Zeige PlayTools Installations Popup";
+"preferences.toggle.alwaysInstallPlayTools" = "PlayTools immer installieren";
+"alert.install.injectPlayTools" = "PlayTools injizieren";
+"button.Yes" = "Ja";
+"button.No" = "Nein";
+"settings.noPlayTools" = "PlayTools ist nicht in dieser App installiert";
+"settings.removePlayTools" = "Entferne PlayTools";
+"settings.info.playTools" = "PlayTools installiert:";
+"playapp.refreshSources" = "Quellen aktualisieren";
+"error.appMaliciousProhibited" = "Diese App verhält sich auf Macs böswillig, und ihre Verwendung kann Ihr Gerät in einen nicht bootfähigen Zustand versetzen, daher wird sie von PlayCover blockiert. (Wird deinstalliert...)";
+"alert.install.injectPlayToolsQuestion" = "Willst du PlayTools in diese Applikation injizieren?";
+"alert.install.playToolsInformative" = "PlayTools ist ein Tool, mit dem Sie Tasten an Bildschirmberührungen, benutzerdefinierte Bildschirmauflösungen und mehr binden können, aber es kann bestimmte Apps beschädigen";
+"button.Dismiss" = "Zurückweisen";
+"state.enabled" = "Aktiviert";
+"state.disabled" = "Deaktiviert";
+"state.pendingReboot" = "Ausstehender Neustart";
+"menubar.configSigning" = "Signatur konfigurieren";
+"configSigning.info.SIP" = "SIP muss vollständig bis teilweise deaktiviert sein, damit AMFI deaktiviert werden kann.";
+"configSigning.info.SIPHeader" = "Schutz der Systemintegrität";
+"configSigning.info.AMFI" = "AMFI muss deaktiviert werden, um das gefälschte Signieren von Apps zuzulassen, damit sie mit der richtigen Team-ID ausgeführt werden können";
+"configSigning.info.AMFIHeader" = "Dateiintegrität von Apple Mobile";
+"configSigning.action.shutdown" = "Meinen Mac herunterfahren";
+"configSigning.action.copyCommand" = "Befehl in die Zwischenablage kopieren";
+"configSigning.action.restart" = "Meinen Mac neustarten";
+"configSigning.step.disableSIP" = "Bitte deaktiviere SIP im Wiederherstellungsmodus";
+"configSigning.step.AMFIreboot" = "AMFI deaktiviert. Bitte neustarten";
+"configSigning.step.complete" = "Paketsignierung wurde erfolgreich konfiguriert";
+"configSigning.alert.copied" = "Befehl kopiert!";
+"configSigning.alert.info" = "Bitte fügen Sie den Befehl in Terminal.app ein und führen Sie ihn aus. Ihr Mac wird danach neu gestartet";
+"button.Help" = "Hilfe";
+"configSigning.header" = "Konfiguriere die Paketsignierung";
+"configSigning.subtext" = "Die Paketsignierung hilft bei der Behebung von Problemen mit Apps, \ndie darauf angewiesen sind korrekte Team-IDs für Vorgänge wie die Autorisierung zu benötigen. \nMit der Aktivierung dieser Funktion können Sicherheitsrisiken verbunden sein.\n\n Daher empfehlen wir, es zu deaktivieren, wenn es nicht erforderlich ist";
+"configSigning.step.disableAMFI" = "Bitte deaktiviere AMFI";
+"alert.power.subtitle" = "Einige Apps funktionieren nicht, wenn der Energiesparmodus aktiviert ist. Deaktivieren vom Energiesparmodus ist empfohlen.";
+"alert.power.title" = "Energiesparmodus aktiviert!";
+"ipaLibrary.version.older" = "Diese Version ist älter als die, die du installiert hast";
+"ipaLibrary.version.same" = "App ist schon installiert";
+"ipaLibrary.version.newer" = "Diese Version ist neuer als die, die du installiert hast";
+"settings.text.debugger" = "Debugger:";
+"ipaLibrary.alert.download" = "Bist du dir sicher das du diese Version von %@ installieren willst?";
+"ipaLibrary.download" = "Installation";
+"alert.differentBundleIdKeymap.message" = "Die Tastaturbelegung wurde möglicherweise für eine andere Applikation erstellt.";
+"alert.differentBundleIdKeymap.text" = "Bist du dir sicher dass du diese Tastaturbelegung importieren willst?";
+"settings.toggle.lldb" = "Öffnen mit LLDB";
+"settings.toggle.lldbWithTerminal" = "Im Terminal öffnen";
+"settings.unavailable.hud" = "Metal HUD nicht verfügbar";
+"error.failedToStripBinary" = "ARM64-Architektur konnte nicht in Fat Binary gefunden werden!";
+"settings.playChain.enable" = "Aktiviere PlayChain (Experimental)";
+"settings.playChain.help" = "Aktiviere die PlayChain-Unterstützung für diese Anwendung, sodass Apple Keychain Services (teilweise) verwendet werden kann";
+"settings.playChain.debugging" = "PlayChain Debugging";
+"playapp.noSources.title" = "Keine IPAs installiert";
+"playapp.noSources.subtitle" = "Du hast derzeit keine IPAs installiert. Klicke auf die Schaltfläche unten, um eine zu importieren.";
+"settings.tab.bypasses" = "Umgeht";
+"settings.addToLaunchpad" = "Zum Launchpad hinzufügen";
+"settings.removeFromLaunchpad" = "Vom Launchpad entfernen";
+"playapp.download.integrityCheck" = "Überprüfung der Dateiintegrität:";
+"playapp.download.differentChecksum" = "Unterschiedliche Prüfsummen! Möchtest du mit der Installation fortfahren?";
+"playapp.download.differentChecksumDesc" = "\"%@\" erwartet, \"%@\" erhalten";
+"playapp.progress.canceled" = "Abgebrochen";
+"button.Reload" = "Neu laden";
+"playapp.clearPlayChain" = "PlayChain-Daten leeren";
+"playapp.importIPA" = "IPA importieren";
+"ipaLibrary.noNetworkConnection.required" = "IPA-Bibliothek erfordert eine Internetverbindung";
+"preferences.toggle.removePlayChain" = "PlayChain entfernen";
+"preferences.popover.duplicate" = "Link duplizieren";
+"alert.app.clearPlayChain" = "Alle PlayChain-Daten werden gelöscht. Möglicherweise müssen Sie sich erneut bei der App anmelden. Möchten Sie fortfahren?";
+"settings.toggle.windowExperimentalFix.help" = "Versucht, deine App-Szene zu reparieren, wenn du Probleme damit hast";
+"settings.toggle.windowExperimentalFix" = "Fensterprobleme beheben";
+"settings.highResolution" = "Hohe Auflösung kann zu Abstürzen führen";

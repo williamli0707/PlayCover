@@ -1,40 +1,387 @@
-"Add app" = "アプリの追加";
-"My Apps" = "私のアプリ";
-"Downloads" = "ダウンロード";
-"Settings" = "設定";
-"About" = "PlayCoverについて";
-"Show in Finder" = "Finderで表示";
-"Update PlayTools" = "PlayToolsを更新する";
-"Reset PlayTools settings" = "PlayToolsの設定をリセット";
-"Clear app cache" = "アプリのキャッシュをクリア";
-"Delete app" = "アプリを削除する";
-"Wrong file type" = "ファイルのタイプを間違っています";
-"You should use .ipa file" = ".ipaファイルを使用してください";
-"OK" = "OK";
-"Please, input your admin password" = "管理者パスワードを入力してください";
-"App needs it for xattr command" = "アプリがxattrコマンドを使用するために必要です";
-"Advanced settings" = "詳細設定";
-"Cancel" = "キャンセル";
-"Install app" = "アプリをインストール";
-"Installing..." = "インストール中です・・・";
-"Error!" = "エラーが発生しました！";
-"Install PlayTools" = "PlayToolsをインストール";
-"Fix login in games" = "ゲームの中のログインを修復する";
-"Alternative convert method" = "他の変換方法";
-"Alternative decrypt method" = "他の解読方法";
-"Export for iOS, Mac (Sideloadly, AltStore)" = "iOS、Mac（Sideloadly、Alt Store）の為に書き出す";
-"Install instruction" = "インストールマニュアル";
-"(for Genshin login fix e.g.)" = "（例えば、原神ログインの修復）";
-"You have enabled SIP. You must disable it to run the game." ="SIPが有効になっています。ゲームを実行するには無効化してください。";
-"To do this you need to reboot, enter into Recovery mode, open Terminal and type" = "インストールを実行するには再起動して、復帰モードに入り、以下のコマンドをTerminalに入力する必要があります。";
-"Your nvram params are not valid. Execute following command in Terminal and restart Mac" = "nvramの設定が間違っています。以下のコマンドをTerminalに入力して、Macを再起動してください。";
-"Your system is not ready to run games! Watch video for easy setup." = "あなたのシステムはまだゲームを実行する準備ができていません。簡単にインストールするため、マニュアル動画を観てください";
-"Your system setup is correct." = "システム設定に問題はありません。";
-"About app" = "アプリについて";
-"This .IPA can't be decrypted on this Mac. Download .ipa from AppDb.to or our Discord. You can also try to use 'Alterntaive decrypt' checkbox" = "この.ipaファイルはこのMacでは解読できません。AppDb.toまたはDiscordサーバーからもう一度アプリをダウンロードしてください。「他の解読方法」のボタンも試すことが出来ます。";
-"This .IPA is courrupted. It doesn't contains Info.plist." = "この.ipaファイルは壊れています。Info.plistが含まれていません。";
-"It it impossible to decrypt .IPA with SIP disabled. Please, enable it." = "SIPが無効されていると.ipaファイルは解読できません。有効にしてください。";
-"Please reinstall PlayCoverApp" = "PlayCoverAppを再インストールしてください";
-"Make sure you don't disallowed PlayCover to access files in Settings - Security & Privacy" = "PlayCoverにファイルのアクセスが許可されているか　設定ーセキュリティとプライバシーで確認してください";
-"This .IPA is courrupted.Try to use another .ipa" = "この.ipaファイルは壊れています。他の.ipaファイルを使ってみてください。";
-"You not performed all instructions! Please, perform all instructions in 'Settings' or watch video in pinned messages." = "マニュアルのすべてのステップが実行されていません。設定にある説明ステップをすべて実行してください。またはディスコードの固定メッセージの動画を観てください。";
+/* (No Comment) */
+"alert.app.delete" = "アプリの全てのデータが削除されます。もう一度ダウンロードする必要があるかもしれません。続けますか？";
+
+/* (No Comment) */
+"alert.app.preferences" = "すべてのアプリ内設定は削除されます。続けますか？";
+
+/* (No Comment) */
+"alert.appCacheCleared" = "アプリのデータは削除されました！";
+
+/* (No Comment) */
+"alert.error" = "エラーが発生しました!";
+
+/* (No Comment) */
+"alert.errorImportKm" = "キーマッピングのインポートに何らかのエラーが発生しました！";
+
+/* (No Comment) */
+"alert.kmImported" = "キーマッピングをインポートしました！";
+
+/* (No Comment) */
+"alert.moveAppToApplications.move" = "/Applicationsに移動";
+
+/* (No Comment) */
+"alert.restart" = "PlayCoverを再起動してください。";
+
+/* (No Comment) */
+"alert.storeAccount.regionIsNotValid" = "現在のアカウントは他の地域に設定されています。ゲームを起動して、地域を変更してから、ゲートを通過して保存してください。その後、再度試してください";
+
+/* (No Comment) */
+"alert.success" = "完了しました";
+
+/* (No Comment) */
+"button.Cancel" = "キャンセル";
+
+/* (No Comment) */
+"button.Close" = "閉じる";
+
+/* (No Comment) */
+"button.Install" = "インストール";
+
+/* (No Comment) */
+"button.OK" = "OK";
+
+/* (No Comment) */
+"button.Proceed" = "実行";
+
+/* (No Comment) */
+"error.corruptedIPA" = "この.ipaファイルは破損しています。\"Info.plist\"ファイルが含まれていません。";
+
+/* (No Comment) */
+"error.waitInstallation" = "今のインストールを完了するまでお待ちください！";
+
+/* (No Comment) */
+"menubar.checkForUpdates" = "更新を確認する…";
+
+/* (No Comment) */
+"menubar.discord" = "Discord";
+
+/* (No Comment) */
+"menubar.documentation" = "ドキュメント";
+
+/* (No Comment) */
+"menubar.exportToSideloady" = "Sideloadlyに書き出す";
+
+/* (No Comment) */
+"menubar.github" = "GitHub";
+
+/* (No Comment) */
+"menubar.log.copy" = "ログをコピーする";
+
+/* (No Comment) */
+"menubar.website" = "ホームページ";
+
+/* (No Comment) */
+"notification.appInstalled" = "アプリをインストールしました！";
+
+/* (No Comment) */
+"notification.appInstalled.message" = "PlayCoverでチェックしてください！";
+
+/* (No Comment) */
+"playapp.activateAccount" = "アカウントを変更する";
+
+/* (No Comment) */
+"playapp.clearCache" = "アプリのキャッシュを消去";
+
+/* (No Comment) */
+"playapp.clearPreferences" = "アプリの設定をリセット";
+
+/* (No Comment) */
+"playapp.delete" = "アプリをアンインストール";
+
+/* (No Comment) */
+"playapp.deleteAccount" = "アカウントを削除";
+
+/* (No Comment) */
+"playapp.exportKm" = "キーマッピングをエクスポート";
+
+/* (No Comment) */
+"playapp.importKm" = "キーマップを読み込む";
+
+/* (No Comment) */
+"playapp.install.addToLib" = "ライブラリにアプリを追加中...";
+
+/* (No Comment) */
+"playapp.install.copy" = "アプリをコピー中...";
+
+/* (No Comment) */
+"playapp.install.createWrapper" = "アプリのコンテナーを作成中...";
+
+/* (No Comment) */
+"playapp.progress.finished" = "完了";
+
+/* (No Comment) */
+"playapp.install.installPlayTools" = "PlayToolsをインストール中...";
+
+/* (No Comment) */
+"playapp.install.signing" = "アプリのコード署名を追加中...";
+
+/* (No Comment) */
+"playapp.install.unzip" = ".ipaファイルからアプリの書き出し中...";
+
+/* (No Comment) */
+"playapp.openCache" = "アプリのキャッシュフォルダを表示";
+
+/* (No Comment) */
+"playapp.settings" = "設定";
+
+/* (No Comment) */
+"playapp.showInFinder" = "Finderで表示";
+
+/* (No Comment) */
+"playapp.storeCurrentAccount" = "ストアのアカウント";
+
+/* (No Comment) */
+"preferences.button.checkForUpdates" = "更新の確認";
+
+/* (No Comment) */
+"preferences.tab.updates" = "アップデート";
+
+/* (No Comment) */
+"preferences.toggle.automaticUpdates" = "自動アップデート";
+
+/* (No Comment) */
+"settings.button.discord" = "カスタムDiscordアクティビティ";
+
+/* (No Comment) */
+"settings.button.clearActivity" = "カスタムアクティビティを消去";
+
+/* (No Comment) */
+"settings.picker.iosDevice" = "iOSデバイス:";
+
+/* %.f */
+"settings.slider.mouseSensitivity" = "マウス感度: %.f";
+
+/* (No Comment) */
+"settings.text.applicationID" = "アプリケーションID";
+
+/* (No Comment) */
+"settings.text.customHeight" = "縦";
+
+/* (No Comment) */
+"settings.text.customWidth" = "横";
+
+/* (No Comment) */
+"settings.text.details" = "詳細";
+
+/* (No Comment) */
+"settings.text.details.help" = "タイトルの下から1行目";
+
+/* (No Comment) */
+"settings.text.image" = "イメージ";
+
+/* (No Comment) */
+"settings.text.image.help" = "画像または開発ポータルのアセット名へのリンク";
+
+/* (No Comment) */
+"settings.text.state" = "状態";
+
+/* (No Comment) */
+"settings.text.state.help" = "タイトルの下から2番目の行";
+
+/* (No Comment) */
+"settings.toggle.disableDisplaySleep" = "ディスプレイのスリープを無効にする";
+
+/* (No Comment) */
+"settings.toggle.discord" = "Discordアクティビティの有効化";
+
+/* (No Comment) */
+"settings.toggle.jbBypass" = "ジェイルブレイクバイパスを有効にする（アルファ版）";
+
+/* (No Comment) */
+"settings.toggle.km" = "キーマッピングを有効にする";
+
+/* (No Comment) */
+"soundAlert.failureText" = "サンプルレートの変更に失敗しました。「Audio MIDI設定」アプリから手動でサンプルレートを設定することができます";
+
+/* (No Comment) */
+"soundAlert.informativeText" = "現在の出力デバイスのサンプルレートが48または44.1KHzではないため、問題が発生する可能性があります。現在のデバイスのサンプルレートを48KHzに変更しますか？";
+
+/* (No Comment) */
+"soundAlert.messageText" = "不適切なオーディオ設定が検出されました!";
+
+/* (No Comment) */
+"soundAlert.successText" = "現在のデバイスのサンプルレートを48KHzに変更しました";
+
+/* (No Comment) */
+"storeAccount.deleteAcc" = "アカウントを削除";
+
+/* (No Comment) */
+"storeAccount.nameOfAcc" = "アカウント名";
+
+/* (No Comment) */
+"storeAccount.nameOfAcc.textfieldPlaceholder" = "アカウントの名前...";
+
+/* (No Comment) */
+"storeAccount.selectAcc" = "アカウントの選択";
+
+/* (No Comment) */
+"storeAccount.selectAccRegion" = "アカウントの地域を変更する";
+
+/* (No Comment) */
+"storeAccount.selectAccRegion.asia" = "アジア";
+
+/* (No Comment) */
+"storeAccount.selectAccRegion.cht" = "台湾";
+
+/* (No Comment) */
+"storeAccount.selectAccRegion.euro" = "ヨーロッパ";
+
+/* (No Comment) */
+"storeAccount.selectAccRegion.usa" = "米国";
+
+/* (No Comment) */
+"storeAccount.store" = "アカウントを保存";
+
+/* (No Comment) */
+"storeAccount.storeAcc" = "アカウントを保存";
+"settings.resetKmCompleted" = "キーマップは初期化されました！";
+"settings.tab.misc" = "その他";
+"playapp.exportKmPanel.fieldLabel" = "キーマップの名前:";
+"sidebar.appLibrary" = "アプリケーションライブラリ";
+"sidebar.ipaLibrary" = "IPAライブラリ";
+"storeAccount.alert.restoreAccount" = "本当にアカウントを復元しますか？";
+"storeAccount.alert.restoreAccount.button" = "アカウントを復元";
+"storeAccount.alert.restoreAccount.msg" = "これにより、現在サインインしているアカウントが上書きされます。";
+"storeAccount.alert.deleteAccount" = "本当にアカウントを削除しますか？";
+"storeAccount.alert.deleteAccount.button" = "アカウントを削除";
+"alert.moveAppToApplications.title" = "アプリケーションフォルダに移動させますか？";
+"alert.moveAppToApplications.subtitle" = "正しく実行するには、PlayCoverがアプリケーションフォルダにある必要があります。下のボタンを押すと、PlayCoverが自動的に移動されます。";
+"button.Quit" = "終了";
+"error.appEncrypted" = "このアプリは暗号化されています!復号化されたIPAを使用してください。iMazing IPAはサポートされていません！";
+"error.appCorrupted" = "問題が発生しました。 別の IPA ファイルを使用してみてください。";
+"error.appProhibited" = "PlayCoverでこのアプリを使用すると、BAN される可能性があります!";
+"error.noGenshinAccount" = "Genshin アカウントが見つかりませんでした。 アプリ内でアカウントにサインインしていますか?";
+"settings.title" = "%@設定";
+"settings.tab.info" = "情報";
+"settings.tab.km" = "キーマップ";
+"settings.toggle.km.help" = "タッチスクリーンを使用する ゲームにキーボード サポートを追加します。 Command + K を使用してエディター メニューを開きます。";
+"settings.toggle.mm" = "マウスのマッピング";
+"settings.toggle.mm.help" = "タッチの動きをエミュレートするマウス コントロールを追加します。 Command + K を使用してエディター メニューを開きます。";
+"settings.tab.graphics" = "グラフィックス";
+"settings.picker.adaptiveRes" = "適応解像度:";
+"settings.picker.adaptiveRes.help" = "アプリのウィンドウ解像度の調整";
+"settings.picker.adaptiveRes.0" = "デフォルト";
+"settings.picker.adaptiveRes.1" = "自動";
+"settings.picker.adaptiveRes.5" = "カスタム";
+"settings.toggle.jbBypass.help" = "一部のゲームで脱獄検出を回避しようとします (ゲームによっては動作しません)";
+"settings.picker.aspectRatio" = "アスペクト比:";
+"settings.toggle.disableDisplaySleep.help" = "スリープを無効にします";
+"settings.info.displayName" = "表示名:";
+"settings.info.bundleName" = "バンドル名:";
+"settings.info.bundleIdentifier" = "バンドル識別子:";
+"settings.info.executableName" = "実行可能ファイル名:";
+"settings.info.minimumOSVersion" = "必要なiOSバージョン:";
+"settings.info.url" = "URL:";
+"settings.resetSettings" = "設定をリセット";
+"settings.resetKm" = "キーマップをリセット";
+"settings.resetSettingsCompleted" = "設定は初期化されました！";
+"settings.toggle.hud" = "Metal HUD";
+"settings.info.bundleVersion" = "バンドルバージョン:";
+"playapp.deleteConfirm" = "アンインストール";
+"playapp.deleteMessage" = "本当に %@ をアンインストールしますか？";
+"alert.legacyImport.title" = "古いアプリケーション設定が検出されました！";
+"alert.legacyImport.subtitle" = "レガシー設定とキーマッピングファイルが検出されました。これらのファイルを新しい形式に変換しますか？";
+"button.Convert" = "変換";
+"settings.text.detectedResolution" = "検出された解像度:";
+"playapp.add" = "アプリを追加";
+"alert.wrongFileType.title" = "ファイルのタイプが無効です!";
+"alert.wrongFileType.subtitle" = "PlayCoverは有効な.ipaファイルのみをインストールできます。";
+"playapp.addSource" = "ソースを追加";
+"ipaLibrary.noSources.title" = "ソースがありません";
+"ipaLibrary.noSources.subtitle" = "IPAのソースがありません。ボタンをクリックして追加します。";
+"ipaLibrary.noSources.button" = "ソースを追加";
+"ipaLibrary.noNetworkConnection.toast" = "インターネットに接続されていません！";
+"preferences.tab.ipasource" = "IPAのソース";
+"preferences.button.addSource" = "ソースを追加";
+"preferences.button.deleteSource" = "ソースを削除";
+"preferences.button.moveSourceUp" = "1つ上に上げる";
+"preferences.button.moveSourceDown" = "1つ下に下げる";
+"preferences.popover.valid" = "有効なリンク";
+"preferences.popover.badurl" = "無効なURL!";
+"preferences.popover.badjson" = "JSONファイルが無効であるか見つかりません!";
+"preferences.textfield.url" = "ソースのURL...";
+"playapp.download.downloading" = "ダウンロード中";
+"error.waitDownload" = "ダウンロードが終了するまでお待ちください!";
+"menubar.clearCache" = "キャッシュをクリア";
+"preferences.tab.uninstall" = "アンインストール";
+"preferences.whenUninstalling" = "アンインストール時:";
+"preferences.toggle.showUninstall" = "警告を表示";
+"preferences.toggle.clearAppData" = "データの消去";
+"preferences.toggle.removeKeymap" = "キーマップを消去";
+"preferences.toggle.removeSetting" = "設定を削除";
+"preferences.toggle.removeEntitlements" = "資格を消去";
+"preferences.button.pruneFiles" = "ファイルを削除";
+"preferences.prune.alert" = "すべてのファイルを削除しますか？";
+"preferences.prune.message" = "これにより、設定、キーマッピング、エンタイトルメント、アプリデータなどのファイルがすべて削除されます";
+"playapp.progress.failed" = "失敗";
+"alert.supression" = "これはPlayCover環境設定で変更できます";
+"preferences.tab.install" = "インストール";
+"preferences.toggle.showInstallPopup" = "PlayToolsをインストールするポップアップを表示する";
+"preferences.toggle.alwaysInstallPlayTools" = "常にPlayToolsをインストールする";
+"alert.install.injectPlayTools" = "PlayToolsをインストールする";
+"button.Yes" = "はい";
+"button.No" = "いいえ";
+"settings.noPlayTools" = "PlayToolsがインストールされていません";
+"settings.removePlayTools" = "PlayToolsを削除";
+"settings.info.playTools" = "PlayToolsがインストール済み:";
+"playapp.refreshSources" = "ソースを更新";
+"error.appMaliciousProhibited" = "このアプリは Mac で悪意を持って動作し、これを使用するとデバイスが起動できない状態になる可能性があるため、PlayCover からブロックされました。 (アンインストール中...)";
+"alert.install.injectPlayToolsQuestion" = "PlayToolsをインストールしますか？";
+"alert.install.playToolsInformative" = "PlayTools は、キーをタッチスクリーンやカスタム ディスプレイ解像度などにバインドできるツールですが、特定のアプリが動作しなくなる可能性があります";
+"button.Help" = "ヘルプ";
+"button.Dismiss" = "無視";
+"state.enabled" = "有効";
+"state.disabled" = "無効";
+"state.pendingReboot" = "保留中の再起動";
+"menubar.configSigning" = "コード署名設定";
+"configSigning.header" = "パッケージ署名の構成";
+"configSigning.info.SIP" = "AMFI をオフにするには、SIP を完全または部分的に無効にする必要があります。";
+"configSigning.subtext" = "パッケージ署名は、承認などの操作のための正しいチーム IDに\n依存するアプリの問題を修正するのに役立ちます。\nこの機能を有効にすると、セキュリティ リスクが生じる可能性があります。\n\nそのため、不要な場合は無効にすることをお勧めします";
+"configSigning.info.SIPHeader" = "System Integrity Protection";
+"configSigning.info.AMFI" = "アプリの偽の署名を許可し、正しいチーム ID で実行できるようにするには、AMFI をオフにする必要があります";
+"configSigning.info.AMFIHeader" = "Apple Mobile File Integrity";
+"configSigning.action.shutdown" = "macをシャットダウン";
+"configSigning.action.copyCommand" = "コマンドをコピー";
+"configSigning.action.restart" = "macを再起動";
+"configSigning.step.disableSIP" = "SIPをリカバリーモードから無効にしてください";
+"configSigning.step.disableAMFI" = "AMFIを無効にしてください";
+"configSigning.step.AMFIreboot" = "AMFIは無効化されました。再起動してください";
+"configSigning.step.complete" = "パッケージ署名が正常に構成されました";
+"configSigning.alert.copied" = "コマンドがコピーされました！";
+"configSigning.alert.info" = "コマンドを Terminalに貼り付けて実行してください。 Mac が再起動します";
+"alert.power.title" = "低電力モードが有効です！";
+"alert.power.subtitle" = "一部のアプリは、低電力モードが有効になっていると動作しません。 無効にすることをお勧めします。";
+"ipaLibrary.download" = "ダウンロード";
+"settings.text.debugger" = "デバッグ：";
+"ipaLibrary.version.older" = "これは他にインストールされているものよりも古いバージョンです";
+"ipaLibrary.version.same" = "すでにインストール済み";
+"ipaLibrary.version.newer" = "これは他にインストールされているものよりも新しいバージョンです";
+"ipaLibrary.alert.download" = "%@のこのバージョンをダウンロードしてもよろしいですか?";
+"alert.differentBundleIdKeymap.message" = "キーマップは別のアプリケーション用に作成された可能性があります。";
+"alert.differentBundleIdKeymap.text" = "このキーマップをインポートしてもよろしいですか?";
+"settings.toggle.lldb" = "LLDBで開く";
+"settings.toggle.lldbWithTerminal" = "ターミナルで開く";
+"settings.unavailable.hud" = "Metal HUDは利用できません";
+"error.failedToStripBinary" = "ファット バイナリで ARM64 arch が見つかりませんでした!";
+"settings.playChain.enable" = "Enable PlayChain (experimental)";
+"settings.playChain.help" = "Enable PlayChain support for this application, allowing it to (partially) use Apple Keychain Services";
+"settings.playChain.debugging" = "PlayChain debugging";
+"playapp.noSources.title" = "IPA がインストールされていません";
+"playapp.noSources.subtitle" = "現在、IPA はインストールされていません。 下のボタンをクリックしてインポートします。";
+"settings.addToLaunchpad" = "Add to Launchpad";
+"settings.tab.bypasses" = "Bypasses";
+"settings.removeFromLaunchpad" = "Remove from Launchpad";
+"playapp.download.integrityCheck" = "ファイルの整合性の検証中:";
+"playapp.download.differentChecksum" = "チェックサムが異なります！ インストールを続行しますか?";
+"playapp.download.differentChecksumDesc" = "期待される \"%@\", got \"%@\"";
+"playapp.progress.canceled" = "キャンセルされました";
+"playapp.importIPA" = "ipaをインポート";
+"preferences.toggle.removePlayChain" = "PlayChainを削除";
+"button.Reload" = "リロード";
+"playapp.clearPlayChain" = "PlayChain データを消去";
+"ipaLibrary.noNetworkConnection.required" = "IPAライブラリにはインターネット接続が必要です";
+"preferences.popover.duplicate" = "リンクを複製";
+"alert.app.clearPlayChain" = "すべての PlayChain データが消去されます。 アプリへの再ログインが必要になる場合があります。 続けますか?";
+"settings.toggle.windowExperimentalFix.help" = "問題がある場合は、アプリのシーンを修正しようとします";
+"settings.toggle.windowExperimentalFix" = "Fix window issues";
+"settings.highResolution" = "High resolution may cause crashing";
